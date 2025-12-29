@@ -209,12 +209,66 @@ public class main {
 
         //for tomorrow
         //second largest number in an array
-        int[] arrayForSecondLargest = {12,35,1,10,34,25,100};
-        
-        //mini programs: number guess check
-        //print the star patterns
-        
+       
+        //what is Integer.MIN_VALUE? 
+        System.out.println("Integer is a class in java, Integer.MIN_VALUE gives the smallest possible integer value: " + Integer.MIN_VALUE);
+        // double x_ = Math.log(2, Integer.MIN_VALUE);   //it gave nan as the result, don't know why
+        // System.out.println("Integer.MIN_VALUE is approximately " + x_ + "th power of 2");
+        System.out.println("Since 2 raised to power 31 is " + Math.pow(2,31) + ", Integer.MIN_VALUE is - (2 raised to power 31)");   // we see that Integer.MIN_VALUE is - (2 raised to power 31)
+        System.out.println("2 raised to the power of 31 is " + Math.pow(2,31) + ", which is - (Integer.MIN_VALUE)");
+        //back to the problem
 
+        int[] arrayForSecondLargest = {12,35,1,10,34,25,100};
+        int firstLargest, secondLargest;
+        firstLargest = secondLargest = Integer.MIN_VALUE; //initialize to smallest possible integer value
+        for (int j = 0; j < arrayForSecondLargest.length; j++) {
+            if (arrayForSecondLargest[j] > firstLargest) {
+                secondLargest = firstLargest;
+                firstLargest = arrayForSecondLargest[j];
+            } 
+            else if (arrayForSecondLargest[j] > secondLargest && arrayForSecondLargest[j] != firstLargest) {
+                secondLargest = arrayForSecondLargest[j];
+            }
+        }
+        System.out.println("\nFirst largest number is: " + firstLargest);
+        System.out.println("\nSecond largest number is: " + secondLargest);
+        /*------------------------------------------------------------------------------------------
+                                                MINI PROGRAMS
+        ------------------------------------------------------------------------------------------*/
+        //NUMBER GUESS CHECK
+        int secretNum = 8;
+        int guessNum = 23; //change this value to test
+        if (guessNum < secretNum) {
+            System.out.println("\nYour guess is too low.");
+        } 
+        else if (guessNum > secretNum) {
+            System.out.println("\nYour guess is too high.");
+        } 
+        else {
+            System.out.println("\nCongratulations! You guessed the correct number.");
+        }
+
+
+        /* PRINT STAR PATTERN
+        ----------------
+        *
+        **
+        ***
+        ****
+        *****
+        ----------------
+        */
+        int starRows = 5;
+        System.out.println("\nStar Pattern:");
+        for (int row = 1; row <= starRows; row++) {
+            // for (int col = 1; col <= row; col++) {       //NESTED LOOP METHOD
+            //     System.out.print("*");
+            // }
+            // System.out.println();
+            System.out.print("*".repeat(row) + "\n");  //ONE LINER: using repeat function of String class
+        }
+
+        //next day: plan the roadmap for next levels, list out java methods, functions, miniprojects to be done, and start working on them.  
     }
 }
 
