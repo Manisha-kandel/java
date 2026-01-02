@@ -1,5 +1,12 @@
+/*  
+public : the class is accessible by any other class
+static: the method belongs to the class rather than an instance of the class
+void: the method does not return a value
+main: the entry point of the program
+*/
+
 // Print hello world, name and age, print sum and difference of two numbers, check if a number is even or odd, check if a number is divisible by 3 based on sum of its digits.
-public class main {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         System.out.println("Name: Manisha Kandel");
