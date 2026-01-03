@@ -37,6 +37,13 @@ public class StringClass {
         // Replace
         String newText = text.replace("World", "Java");
         System.out.println(newText);     // "Hello Java"
+
+        String a_ = "Hello";
+        String b = a_.toUpperCase();
+        System.out.println(a_);
+        System.out.println(b); 
+        System.out.println(a_.toUpperCase());
+        System.out.println(a_);
         
         
 
