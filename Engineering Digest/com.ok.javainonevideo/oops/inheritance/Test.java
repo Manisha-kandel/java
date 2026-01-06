@@ -46,8 +46,10 @@ class Phone{
     }
 }
 class SmartPhone extends Camera {}    //works
- 
-/* class SmartPhone extends Camera, Phone, MusicPlayer {}     //doesn't work 
+
+/* 
+BUT this doesn't work: 
+class SmartPhone extends Camera, Phone, MusicPlayer {}     //doesn't work 
 */
 
 /* a solution: 

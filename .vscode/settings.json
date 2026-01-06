@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Engineering Digest/com.ok.javainonevideo/oops",
+        "Engineering Digest/com.ok.javainonevideo/multithreading",
+        "Engineering Digest/com.ok.javainonevideo/datatypes",
+        "Engineering Digest/com.ok.javainonevideo/controlflow",
+        "Engineering Digest/com.ok.javainonevideo/multithreadings"
+    ]
+}
